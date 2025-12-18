@@ -7,11 +7,11 @@ import { ArrowRight } from 'lucide-react';
 const Footer = () => {
 
     return (
-        <footer className='w-full h-auto bg-black py-6 px-14'>
+        <footer className='w-full h-auto bg-black py-6 px-8 md:px-12 lg:px-14'>
 
-            <div className='grid grid-cols-1 gap-y-6 md:grid-cols-1 lg:flex lg:flex-row lg:justify-between pb-3'> 
+            <div className='flex flex-col lg:flex-row lg:justify-between pb-3'> 
 
-                <div className='grid grid-cols-1 gap-y-6 lg:flex lg:justify-between lg:gap-x-8'>
+                <div className='flex flex-col gap-y-6 lg:flex-row lg:justify-between lg:gap-x-8'>
 
                     <div className='w-auto lg:w-2/4'>
                         <p className='text-base text-white text-start leading-6 font-normal'>This is a demo store. All products are representation purpose only.</p>
