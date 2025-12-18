@@ -52,12 +52,12 @@ const Footer = () => {
             </div>
 
             <div className=''>
-                <div className='flex flex-col text-left lg:flex-row lg:items-center lg:justify-center gap-x-6 md:gap-x-3 border-t pt-4 border-gray-500 h-auto lg:justify-center'>
+                <div className='flex flex-col text-left   lg:flex-row lg:items-center gap-x-6 md:gap-x-3 border-t pt-4 border-gray-500 h-auto lg:justify-center'>
                     <a className='text-base text-white font-normal'>Refund Policy</a>
                     <a className='text-base text-white font-normal'>Privacy Policy</a>
                     <a className='text-base text-white font-normal'>Terms of service</a>
                 </div>
-                <p className='text-white text-base text-center mt-3 lg:text-end lg:-mt-6 md:ml-auto'>Copyright@wallyax.com, 2025</p>
+                <p className='text-white text-base text-left md:mt-2 mt-3 lg:text-center xl:text-end xl:-mt-6 xl:ml-auto'>Copyright@wallyax.com, 2025</p>
             </div>
 
         </footer>
