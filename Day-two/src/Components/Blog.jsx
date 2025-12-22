@@ -11,28 +11,28 @@ const Blog = () => {
   const [currentHeadingText, setCurrentHeadingText] = useState("");
 
   return (
-    <section>
+    <section className='scroll-smooth'>
       
-      <div className='my-10 mx-10 lg:mt-16 lg:mx-16 lg:mb-24'>
+      <div className='my-10 md:mx-10 lg:mt-16 lg:mx-16 lg:mb-24'>
         <div className='flex flex-col w-auto md:flex-row lg:flex-row gap-18'>
           <div className='lg:w-2/3'>
-            <img className='h-auto sm:w-auto' src={blogImg} alt="Blog Banner Image" />
+            <img className='h-auto sm:w-auto mx-10' src={blogImg} alt="Blog Banner Image" />
 
-            <div className='block md:hidden relative'>
-              <div className='px-7 pt-5 mt-6 w-auto h-auto bg-black border rounded-4xl'> 
+            <div className='block md:hidden relative min-h-screen overflow-visible'>
+              <div className='px-7 pt-5 mt-6 w-auto h-auto bg-black border rounded-4xl mx-10'> 
                 <p className='text-white font-bold text-4xl leading-10'>A Life-Changing Experience</p>
                 <button className='mt-6 mb-5 w-auto text-sm border font-inter leading-4 rounded-lg bg-[#FFD602] text-black py-2.5 px-4'>Get Audit</button>
               </div>
 
               <div className='sticky top-0 z-50'>
-                <button aria-live='polite' className="w-full flex justify-between self-start items-center bg-white p-3 border border-black mt-5 rounded-2xl" onClick={() => setIsOpen(prev => !prev)}> {currentHeadingText || 'Table of Content'}
+                <button aria-live='polite' className="w-full flex justify-between self-start items-center bg-white p-3 border border-black mt-5" onClick={() => setIsOpen(prev => !prev)}> {currentHeadingText || 'Table of Content'}
                   
                   <ChevronRight
                   className={`transition-transform ${isOpen ? "rotate-90" : ""}`} />
                   </button>
 
                   {isOpen && (
-                    <div className='flex flex-col gap-4 p-3 w-auto h-auto bg-white border border-gray-500 mt-0 rounded-xl'>
+                    <div className='flex flex-col mx-6 gap-4 p-3 w-auto h-auto bg-white border border-gray-500 mt-0 rounded-xl'>
                       <div>
                         <p className='font-bold text-2xl pt-2 pb-2'>Table of Content</p>
                       </div>
@@ -67,7 +67,7 @@ const Blog = () => {
               </div>
 
               {window.innerWidth < 768 && (
-                <div className='mt-6'>
+                <div className='mt-6 mx-10'>
                   <BlogDescription onSectionView={({ id, heading }) => {
                     setCurrentSectionId(id);
                     setCurrentHeadingText(heading);
