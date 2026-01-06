@@ -3,6 +3,7 @@ import Logo from '../assets/logo-sift-hire.png';
 import ConnectorLine from '../assets/connectorline.png';
 import ConnectorMobile from '../assets/connectormobile.png';
 import MobileBg from '../assets/banner_img3.png';
+import DesktopBg from '../assets/banner_img3.png';
 
 const imgImage = "https://www.figma.com/api/mcp/asset/702b7b43-6247-47c9-b5bb-ebb748e1fd4b";
 const imgImage1 = "https://www.figma.com/api/mcp/asset/a885c90d-3875-4be8-9253-0b37b3dae734";
@@ -30,13 +31,16 @@ const Home = () => {
       </div>
 
       {/* Desktop curves */}
-      <div className="hidden lg:block absolute left-[-960px] top-[-1204px] w-[2552px] h-[2551px] rotate-180 pointer-events-none">
+      {/* <div className='hidden lg:block absolute w-auto min-h-[900px] h-svh'>
+        <img src={DesktopBg} className='w-full h-full object-cover' alt="hero image for mobile" />
+      </div> */}
+      <div className="hidden lg:block absolute left-[-650px] top-[-1190px] w-[1900px] h-[2230px] rotate-180 pointer-events-none">
         <img src={imgPolygon3} alt="" className="w-full h-full object-contain opacity-60" />
       </div>
-      <div className="hidden lg:block absolute left-[-861px] top-[-1093px] w-[2353px] h-[2353px] rotate-180 pointer-events-none">
+      <div className="hidden lg:block absolute left-[-650px] top-[-1220px] w-[1900px] h-[2230px] rotate-180 pointer-events-none">
         <img src={imgPolygon5} alt="" className="w-full h-full object-contain opacity-60" />
       </div>
-      <div className="hidden lg:block absolute left-[-810px] top-[-1072px] w-[2252px] h-[2252px] rotate-180 pointer-events-none">
+      <div className="hidden lg:block absolute left-[-650px] top-[-1250px] w-[1900px] h-[2230px] rotate-180 pointer-events-none">
         <img src={imgPolygon2} alt="" className="w-full h-full object-contain opacity-60" />
       </div>
 
@@ -88,7 +92,7 @@ const Home = () => {
         </p>
 
         {/* Dashboard Screenshot */}
-        <div className="hidden lg:block absolute md:left-[580px] lg:right-[-200px] top-20 w-[1104px] h-[732px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.15)]">
+        <div className="hidden lg:block absolute md:left-[580px] lg:left-[690px] top-20 w-[1104px] h-[632px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.15)]">
           <img 
             src={imgImage5} 
             alt="Dashboard preview" 
@@ -98,7 +102,7 @@ const Home = () => {
       </main>
 
       {/* ATS Section */}
-      <section className="relative z-10 mt-[650px] md:mt-[640px] lg:mt-[700px] px-4 lg:px-0">
+      <section className="relative z-10 mt-[650px] md:mt-[650px] lg:mt-[700px] px-4 lg:px-0">
         {/* Background Mobile */}
         <div className="block lg:hidden absolute left-[-219px] top-[180px] w-[1117px] md:w-[1215px] lg:w-[1117px] h-[94px] pointer-events-none">
           <img src={imgLine1Mobile} alt="" className="w-full h-full opacity-50" />
